@@ -24,6 +24,15 @@ Was ist ein hyperscaler
 Das ist ein cloud anbieter der eine sehr grosse Infrastruktur hat das heisst grosse skalierbarkeit für den Kunden. 
 
 ### Betriebsmodelle
+#### On Premise
+Die ganze hard und software wird
+
+### Unterschied Public und Private cloud
+In der Public Cloud werden Resourcen von einem Anbieter bereitgestellt und dann von mehreren Benutzern benutzt die Sicherheit häng sehr stark von dem Anbieter ab und ist auch in seiner Verantwortung. Bei der Private cloud ist das anders dort hat die Organistation die komlette kontrolle. Jedoch hat man in der Orivat cloud auch höhere kosten für hardware.
+
+
+
+## Servicemodelle
 
 #### 1.Infrastructure as a Service
 Bei diesem Modell werden grundlegende Komponenten bereitgestellt wie Maschienen Speicher Netzwerke etc. Dort kann man dann seine eigenen Betriebsysteme und anwendungen installieren.
@@ -31,3 +40,11 @@ Bei diesem Modell werden grundlegende Komponenten bereitgestellt wie Maschienen 
 Hier kann man sich voll auf die entwicklung des Services oder der Anwendung. Das heisst Aspekte wie betriebsystem oder Netzwerkinfrastruktur wird vom Anbieter übernomen.
 #### Software as Service
 Bei diesem Modell muss sich um nichts gekümmert werden es wird netzwerk Hardware infrastruktur einfach alles bereitgestellt und man kann einfach die anwendungen verwenden.
+#### Function as a Service
+Dies ist eine Option die es einem ermöglicht einzele codeabschnitte auf einer serverlosen einheit laufen zu lassen. Ohne sich um die verwaltung zu kümmern.
+### Beispiel Infrastructure as a Service
+AWS
+### Beispiel Platform as a service
+MS Azure
+### Beispiel Software as Service
+MS Office 365
