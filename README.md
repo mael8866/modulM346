@@ -51,6 +51,10 @@ MS Office 365
 
 # AWS
 ## KN02
+### EC2
 ![Bild1](./1.png)
 ![Bild1](./2.png)
+### S3
+![Bild1](./3.png)
+![Bild1](./4.png)
 
