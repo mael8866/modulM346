@@ -64,3 +64,54 @@ MS Office 365
 ### Web- und Datenbankserver
 ![Bild1](./7.png)
 ![Bild1](./8.png)
+## KN03
+### Cloud-init Datei Verstehen
+#cloud-config
+users: #Anfang User Konfiguration
+  - name: ubuntu #user ubuntu wird erstellt
+    sudo: ALL=(ALL) NOPASSWD:ALL #user ubuntu kann alles mit sudo machen ohne passwort
+    groups: users, admin # ubuntu wird der gruppe users und admin hinzugefügt
+    home: /home/ubuntu #Das heimverzeichnis des users Ubuntu wird festgelegt
+    shell: /bin/bash #standart shell des users ubuntu wird festgelegt
+    ssh_authorized_keys: #Konfiguration für zugelassene ssh schlüssel
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key       # öffentlicher ssh schlüssel für den user ubuntu
+ssh_pwauth: false #passwort wird deaktiviert damit sich der user nur per ssh einloggen kann
+disable_root: false #root user wird nicht gelöscht
+package_update: true # System wird bei der erstellung geupdated
+packages:
+  - curl # Befehlszeilentool das zum übertragen von Daten zuständig ist.
+  - wget # Befehlszeilentool das zum Herunterladen von daten aus dem Internet zuständig ist.
+### SSH-Key und Cloud-init
+#### Angepasstes cloud init
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClMuN4c8pSm7QH4RDE2Mx3uEWWihkZ36qAondBO+sGkJtMeX+W5BwTHCSFNqyniqKuMHcKcYhfzcMHMtFB3+k3oIHx2hle7KY9ZAzoefAa/WBQOdpwwwEVMhIGQmqH1IA2xbseQbOYBdu8q4U5fEvHWyrDZyjqYRcmoIH8iOoKCZZ5NfaAPixvdxd4aOYpIsDa/Xujk7vyYl0Wto8SYni91Cb5iygvS95tJyPfTtrNjGuOdVnCRKRRmX4AQefpHmnKJmsT41VLYjJI8OhtLD2KJ6MImJBcPqIsiw8mYMDwJTvKFUrwrR7JM7c2gVNA6Ypv88pBtFMfZpEJ8BhTTM9z aws-key       
+ssh_pwauth: false
+disable_root: false 
+package_update: true
+packages:
+  - curl 
+  - wget 
+
+#### Schlüsselpaar beim Start zugewiesen
+![Bild1](./9.png)
+#### Zugriff per SSH durch den ersten schlüssel
+![Bild1](./10.png)
+#### Zugriffsversuch per SSH durch den zweiten Schlüssel
+![Bild1](./11.png)
+#### Cloud init log
+![Bild1](./11.png)
+#### cloud-init-output log
+![Bild1](./12.png)
+#### MariaDB
+![Bild1](./13.png)
+#### telnet
+![Bild1](./14.png)
+#### telnet
+![Bild1](./15.png)
