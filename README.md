@@ -115,3 +115,101 @@ packages:
 ![Bild1](./14.png)
 #### telnet
 ![Bild1](./15.png)
+#### Cloud init
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCJcKHgH4tZN1XjGda61Bwxgq+kqrsblBy/H+n6/h107YRRYRpOi3UeG6u5ibS1+dAZKPr2lF9JWUAn/zqbFDfTUR7p05b+XwJ0LkB+AafL1vM6Spp8NTqU6QqXpXm8309lP3IlD6T5w+sJlmm5ixpOnv711y1zVnUBvA492O/dqG/gt7xNEMMxVzB/5Lw0bxQz1AEWPAIol0WeLQKfN8sSd/jerOVcHKabt9pk3BdqwJWx0YRDDfICPFKw43mcfzFhytGtkH87nMnT61jA4/ZFSzPiFJYueabkBIC9tEzuCm0fJWaXe+vL0oaIurohtwdIb5nU5diQuNYzjeD2PXIH aws-key       
+ssh_pwauth: false
+disable_root: false 
+package_update: true
+packages:
+  - curl 
+  - wget
+  - mariadb-server
+runcmd:
+  - sudo mysql -sfu root -e "GRANT ALL ON *.* TO 'admin'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;"
+  - sudo sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf
+  - sudo systemctl restart mariadb.service
+  #### index.html
+  ![Bild1](./16.png)
+  #### info.php
+  ![Bild1](./17.png)
+  #### db.php
+  ![Bild1](./18.png)
+  #### adminer
+   ![Bild1](./19.png)
+
+ ## KN04
+
+![Bild1](./20.png)
+![Bild1](./21.png)
+![Bild1](./22.png)
+![Bild1](./23.png)
+![Bild1](./24.png)
+
+
+
+  #cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCJcKHgH4tZN1XjGda61Bwxgq+kqrsblBy/H+n6/h107YRRYRpOi3UeG6u5ibS1+dAZKPr2lF9JWUAn/zqbFDfTUR7p05b+XwJ0LkB+AafL1vM6Spp8NTqU6QqXpXm8309lP3IlD6T5w+sJlmm5ixpOnv711y1zVnUBvA492O/dqG/gt7xNEMMxVzB/5Lw0bxQz1AEWPAIol0WeLQKfN8sSd/jerOVcHKabt9pk3BdqwJWx0YRDDfICPFKw43mcfzFhytGtkH87nMnT61jA4/ZFSzPiFJYueabkBIC9tEzuCm0fJWaXe+vL0oaIurohtwdIb5nU5diQuNYzjeD2PXIH ssh_pwauth: false
+disable_root: false
+package_update: true  
+packages:
+  - apache2
+  - adminer
+  - curl
+  - wget
+  - php
+  - libapache2-mod-php
+  - php-mysqli
+write_files:
+  - content: |
+      <?php phpinfo(); ?>
+    path: /var/www/html/info.php
+    permissions: '0644'
+write_files:
+- content: |
+    <?php
+    $ihrname = "Mael";
+    ?>
+      <html>
+      <head>
+      <title><?php echo $ihrname; ?></title>
+      </head>
+      <body>
+      <h1>Merjungfrau.</h1>
+      <br/>
+      <img src="https://malskn04bucketv1.s3.amazonaws.com/neom-0vpBglNUp_s-unsplash.jpg" />
+      </body>
+      </html>
+    ?>
+  path: /var/www/html/image.php
+  permissions: '0644'
+runcmd:
+  - sudo systemctl restart apache2
+
+
+
+
+Hot Speicher der sofort verfügbar ist
+Warm Wird nicht so heufig wie hot verwendet muss trozdem schnell verfügbar sein
+Cold wird selten oder nie benötigt zugriffszeit keine priorität
+
+![Bild1](./25.png)
+
+172.31.48.230/20
+172.31.48.231/20
+
+
