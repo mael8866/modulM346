@@ -209,7 +209,37 @@ Cold wird selten oder nie benötigt zugriffszeit keine priorität
 
 ![Bild1](./25.png)
 
-172.31.48.230/20
-172.31.48.231/20
+172.31.48.230/16
+172.31.48.231/16
+## KN05
+
+![Bild1](./KN051.png)
+![Bild1](./KN052.png)
+![Bild1](./KN053.png)
+![Bild1](./KN054.png)
+![Bild1](./KN055.png)
+![Bild1](./KN056.png)
+![Bild1](./KN057.png)
+![Bild1](./KN058.png)
+![Bild1](./KN059.png)
+
+Cloud init habe ich nicht mehr da ich diese KN auf meinem PC gemacht habe jedoch habe ich ja alle beweis Screenshots.
+
+### Was ist ein reverse Proxy
+
+Ein reverse Proxy ist ein Server der vor Webservern installiert ist.Er leitet Anfragen von Clients an Webserver weiter. Reverse Proxys werden meist implementiert um die Sicherheit Pervormance und Zuverlässigkeit zu verbessern.
+
+Das erweitern der Disk geht bei laufendem Betrieb
+Den instance Typ zu ändern geht nicht bei laufendem Betrieb
+![Bild1](./KN061.png)
+![Bild1](./KN062.png)
+![Bild1](./KN063.png)
+![Bild1](./KN064.png)
+![Bild1](./KN065.png)
+![Bild1](./KN066.png)
+
+### C
+![Bild1](./KN067.png)
 
 
+![Bild1](./KN068.png)
