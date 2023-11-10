@@ -225,6 +225,8 @@ Cold wird selten oder nie benötigt zugriffszeit keine priorität
 
 Cloud init habe ich nicht mehr da ich diese KN auf meinem PC gemacht habe jedoch habe ich ja alle beweis Screenshots.
 
+## KN06
+
 ### Was ist ein reverse Proxy
 
 Ein reverse Proxy ist ein Server der vor Webservern installiert ist.Er leitet Anfragen von Clients an Webserver weiter. Reverse Proxys werden meist implementiert um die Sicherheit Pervormance und Zuverlässigkeit zu verbessern.
@@ -243,3 +245,67 @@ Den instance Typ zu ändern geht nicht bei laufendem Betrieb
 
 
 ![Bild1](./KN068.png)
+
+## KN07
+![Bild1](./KN071.png)
+![Bild1](./KN072.png)
+
+Ich habe immer das gewählt das zu den Anforderungen passt und dort wo keine forgaben waren haben ich Annahmen getroffen um das beste für den Kunden zu erhalten
+
+![Bild1](./KN073.png)
+
+Wie auch oben schon gesagt habe ich alles so gut wie möglich gemacht das es am besten den Anforderungen des Kunden ensprechen wird.
+![Bild1](./KN074.png)
+![Bild1](./KN075.png)
+
+SalesForce ist teurer als Zoho. Wen man bei SalesForce alles Zusammenrechnet Zahlt man im Monat 2´640 euro im Monat. 
+
+###
+SaaS, IaaS oder Paas
+
+Vorteile SaaS
+Sofort einsetzbarkeit
+Skalierbar
+Kostenersparnis
+
+Nachteile
+Begrenzte Anpassung
+Datensicherheit
+
+Vorteile IaaS
+
+Flexibilität
+Kontrolle
+Skalierbarkeit
+
+Nachteile
+Anpassungsprobleme
+Erfordert Schulungen
+
+Vorteile PaaS
+Entwicklungsplatform
+Zeitersparnis
+
+Nachteile
+Eingeschränkte Individualisierung
+Abhängikeit vom Anbieter
+
+
+
+Die verschiedenen angebote unterscheiden sich sehr vom Preis jedoch auch bon der Dienstleistung
+
+Welches ist das Billigste
+
+Wenn man die Betriebskosten anschaut ist AWS das günstigste mit 874.32 USD pro Jahr
+
+
+Heroku ist das Teuerste der Cloud lösungen. jedoch bietet es mehr möglichkeiten als die anderen. heroku ist sehr einfach hat einen schnellen start. Es bietet Automatisierungs möglichkeiten.
+
+## KN08
+
+![Bild1](./KN081.png)
+![Bild1](./KN082.png)
+![Bild1](./KN083.png)
+![Bild1](./KN084.png)
+![Bild1](./KN085.png)
+
